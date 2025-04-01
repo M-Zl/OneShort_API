@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class OneshortApplication {
-	// commit test
+	// commit test 2
 	public static void main(String[] args) {
 		SpringApplication.run(OneshortApplication.class, args);
 	}
