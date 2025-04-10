@@ -11,5 +11,5 @@ public class ScheduleUpdateDto {
     private String title;
     private String description;
     private String date; // yyyy-MM-dd
-    private String time; // HH:mm
+    private String time; // HH:mm 
 }
