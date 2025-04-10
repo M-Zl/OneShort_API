@@ -2,16 +2,15 @@ package com.three.oneshort.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import java.time.LocalDate;
-import java.time.LocalTime;
+import lombok.Setter;
 
 @Getter
+@Setter
 @NoArgsConstructor
 public class ScheduleRequestDto {
-    private Long userId;
     private String title;
     private String description;
-    private LocalDate date;
-    private LocalTime time;
+    private String date; // yyyy-MM-dd
+    private String time; // HH:mm
+    private Long userId;
 }

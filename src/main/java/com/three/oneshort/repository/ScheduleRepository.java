@@ -9,4 +9,5 @@ import java.util.List;
 
 public interface ScheduleRepository extends JpaRepository<Schedule, Long> {
     List<Schedule> findAllByUserAndDate(User user, LocalDate date);
+    List<Schedule> findByUserIdAndDate(Long userId, LocalDate date);
 }

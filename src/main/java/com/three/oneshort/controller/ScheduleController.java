@@ -2,6 +2,7 @@ package com.three.oneshort.controller;
 
 import com.three.oneshort.entity.Schedule;
 import com.three.oneshort.service.ScheduleService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.three.oneshort.dto.ScheduleRequestDto;
 import com.three.oneshort.dto.ScheduleUpdateDto;
@@ -12,7 +13,8 @@ import java.util.List;
 @RequestMapping("/schedules")
 public class ScheduleController {
 
-    private final ScheduleService scheduleService;
+    @Autowired
+    private ScheduleService scheduleService;
 
     public ScheduleController(ScheduleService scheduleService) {
         this.scheduleService = scheduleService;
@@ -39,6 +41,4 @@ public class ScheduleController {
         scheduleService.deleteSchedule(scheduleId);
         return "삭제 완료!";
     }
-
-
 }
